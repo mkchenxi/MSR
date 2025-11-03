@@ -1,0 +1,20 @@
+Package: MSR
+Title: R Package for MSR
+Version: 2025.1
+Authors@R: 
+    person("Xi", "Chen", , "chen@rsm.nl", role = c("aut", "cre"))
+Description: This package is designed for the Marketing Strategy Research course. It contains functions and data that are used in the R notebooks. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    graphics,
+    stats,
+    utils
