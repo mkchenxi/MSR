@@ -1,4 +1,4 @@
-**Installing from Github**
+# Installing from Github
 ```
 # 1) Install helper if needed
 install.packages("remotes")  # or install.packages("devtools")
