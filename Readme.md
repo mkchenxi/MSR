@@ -28,3 +28,11 @@ If the installation is successful, you will see the end message:
 ** testing if installed package keeps a record of temporary installation path
 * DONE (MSR)
 ```
+
+# Requirements
+
+Note that you need the followign for installation: 
+
+* R ≥ 4.0.0 (recommended)
+* Windows users: install **Rtools**; macOS: **Xcode Command Line Tools** if compiling from source.
+* Package dependencies are installed automatically by `remotes::install_github()`.
