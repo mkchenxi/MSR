@@ -9,6 +9,7 @@ remotes::install_github("mkchenxi/MSR")
 ```
 If the installation sucessfully starts, you should see this: 
 > Downloading GitHub repo mkchenxi/MSR@HEAD
+
 If the installation is successful, you will see the end message:
 ```
 * installing *source* package 'MSR' ...
