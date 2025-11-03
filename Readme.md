@@ -7,3 +7,5 @@ install.packages("remotes")  # or install.packages("devtools")
 remotes::install_github("mkchenxi/MSR")
 # devtools::install_github("mkchenxi/MSR")  # alternative
 ```
+If the installation sucessfully starts, you should see this: 
+> Downloading GitHub repo mkchenxi/MSR@HEAD
