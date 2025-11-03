@@ -1,4 +1,6 @@
 # Installing from Github
+
+Copy and run the following codes line by line: 
 ```
 # 1) Install helper if needed
 install.packages("remotes")  # or install.packages("devtools")
