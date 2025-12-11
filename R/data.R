@@ -143,3 +143,58 @@
 #'
 #' @examples data(osn)
 "osn"
+
+#' Super Bock Mini Conjoint Study
+#'
+#' A dataset from a rating-based conjoint analysis on beer preferences.
+#' Each respondent evaluated a set of hypothetical beer profiles
+#' varying in brand, shape, price, and capacity. The dependent variable
+#' is the respondent's product rating on a 0–100 scale.
+#'
+#' @description
+#' The study investigates how consumers value different attributes of
+#' small bottled beers (“mini” format). Each of 52 consumers rated 18
+#' unique product profiles constructed from combinations of four
+#' attributes: \code{brand}, \code{shape}, \code{price}, and \code{capacity}.
+#' This results in 936 observations in total.
+#'
+#' @format A tibble with 936 rows and 8 variables:
+#' \describe{
+#'   \item{obs_id}{Numeric ID of each observation (1–936).}
+#'   \item{ratings}{Numeric rating (0–100) given by the respondent for the profile.}
+#'   \item{respondent_id}{Numeric ID of the respondent (1–52).}
+#'   \item{profile_id}{Numeric ID of the product profile (1–18).}
+#'   \item{price}{Factor indicating the price level, with four levels:
+#'   \code{"30ct"}, \code{"50ct"}, \code{"60ct"}, \code{"70ct"}.}
+#'   \item{brand}{Factor indicating the beer brand, with three levels:
+#'   \code{"Cristal"}, \code{"Sagres"}, \code{"Super Bock"}.}
+#'   \item{capacity}{Factor indicating the bottle capacity, with three levels:
+#'   \code{"200ml"}, \code{"250ml"}, \code{"330ml"}.}
+#'   \item{shape}{Factor indicating the bottle shape, with three levels:
+#'   \code{"Long Neck"}, \code{"Rocket"}, \code{"Spanish"}.}
+#' }
+#'
+#' @details
+#' This dataset is designed for demonstrating the estimation of part-worth
+#' utilities and market simulations in conjoint analysis. Because ratings are
+#' used rather than choices, the appropriate model framework is a
+#' \emph{rating-based conjoint model}, such as linear regression with
+#' effects coding or hierarchical Bayesian estimation.
+#'
+#' Each respondent rated the same set of 18 profiles, presented in randomized order.
+#'
+#' @source
+#' Simulated teaching dataset based on a conjoint study of small bottled beers.
+#'
+#' @examples
+#' data(super_bock_mini)
+#'
+#' # Inspect structure
+#' str(super_bock_mini)
+#'
+#' # Summarize average ratings by brand
+#' aggregate(ratings ~ brand, data = super_bock_mini, mean)
+#'
+#' # Estimate a simple linear conjoint model
+#' lm(ratings ~ brand + shape + price + capacity, data = super_bock_mini)
+"super_bock"
